@@ -4,5 +4,15 @@ header {
 
   display: flex;
   justify-content: center;
-  background-color: gray;
+
+  background-color: rgb(150, 147, 147);
+
+  position: relative;
+}
+
+.arrow-back {
+  position: absolute;
+  left: 48px;
+  top: 48px;
+  cursor: pointer;
 }

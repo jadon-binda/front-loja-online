@@ -1,11 +1,27 @@
+import { useNavigate } from 'react-router-dom'
 import './styles.css'
-const Logo = require('../../assets/logo.png')
+import Logo from '../../assets/logo.png'
+import ArrowBack from '../../assets/arrow-back-left-icon.svg'
 
-export default function Header() {
+type Props = {
+  showArrowBack?: boolean
+}
+
+export default function Header({ showArrowBack }: Props) {
+  const navigate = useNavigate()
 
   return (
     <header>
-      <img src={Logo} alt="logo" />
+      {
+        showArrowBack &&
+        <img
+          src={ArrowBack}
+          alt="arrow back"
+          className='arrow-back'
+          onClick={() => navigate(-1)}
+        />
+      }
+      <img src={Logo} alt="logotipo" />
     </header>
   )
 }

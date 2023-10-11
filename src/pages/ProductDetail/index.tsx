@@ -18,7 +18,7 @@ export default function ProductDetail() {
 
   return (
     <div className='container'>
-      <Header />
+      <Header showArrowBack />
       <div className='product-detail'>
         <ProductImage image={product?.imageURL || ''} name={product?.name || ''} size={200} />
         <h1>{product?.name}</h1>
