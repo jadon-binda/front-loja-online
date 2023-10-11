@@ -8,3 +8,12 @@
 
   background-color: #fcfcfcad;
 }
+
+.container-products {
+  margin-top: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
