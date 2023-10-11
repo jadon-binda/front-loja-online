@@ -1,20 +1,20 @@
-import './styles.css';
-import Header from '../../components/Header';
-import ProductCard from '../../components/ProductCard';
+import { useEffect, useState } from 'react'
+import Header from '../../components/Header'
+import ProductCard from '../../components/ProductCard'
 import api from '../../services/api'
-import { useEffect, useState } from 'react';
-import Product from '../../types/Product';
+import Product from '../../types/Product'
+import './styles.css'
 
 function Main() {
-  const [allProducts, setAllProducts] = useState<Product[]>([]);
+  const [allProducts, setAllProducts] = useState<Product[]>([])
 
   async function loadProducts() {
     try {
-      const response = await api.get('/product');
+      const response = await api.get('/product')
 
-      setAllProducts([...response.data]);
+      setAllProducts([...response.data])
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   }
 
@@ -38,4 +38,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Main
