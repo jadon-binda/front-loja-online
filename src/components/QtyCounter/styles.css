@@ -1,0 +1,33 @@
+.container-counter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-counter h4 {
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.container-counter-buttons {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.counter-buttons {
+  width: 30%;
+}
+
+.container-quantity {
+  width: 25%;
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}

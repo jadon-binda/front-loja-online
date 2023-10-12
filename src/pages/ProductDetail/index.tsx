@@ -4,6 +4,7 @@ import useProductDetail from '../../hooks/useProductDetail'
 import { useEffect, useState } from 'react'
 import Product from '../../types/Product'
 import ProductImage from '../../components/ProductImage'
+import QtyCounter from '../../components/QtyCounter'
 
 export default function ProductDetail() {
   const { handleGetProduct } = useProductDetail()
@@ -31,7 +32,10 @@ export default function ProductDetail() {
         <p>
           {product?.description}
         </p>
-        <button className='btn btn-white'>Comprar</button>
+        <div className='button-wrapper'>
+          <QtyCounter title='Quantidade' />
+          <button className='btn-white btn'>Comprar</button>
+        </div>
       </div>
     </div>
   )
