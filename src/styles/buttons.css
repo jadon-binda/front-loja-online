@@ -21,3 +21,9 @@ button:hover {
   background-color: #f18407;
   color: #FFFFFF;
 }
+
+.btn-white {
+  background-color: #FFFFFF;
+  color: #f18407;
+  border: 2px solid #f18407;
+}

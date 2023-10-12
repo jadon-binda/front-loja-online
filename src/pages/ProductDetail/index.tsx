@@ -20,15 +20,18 @@ export default function ProductDetail() {
     <div className='container'>
       <Header showArrowBack />
       <div className='product-detail'>
-        <ProductImage image={product?.imageURL || ''} name={product?.name || ''} size={200} />
+        <ProductImage image={product?.imageURL || ''} name={product?.name || ''} size={180} />
         <h1>{product?.name}</h1>
-        <div className='horizontal-line'></div>
-        <h3>Preço: R$ {product?.price}</h3>
-        <span>Quantidade em estoque: {product?.stock}</span>
+        <div className='horizontal-line line'></div>
+        <div className='price-stock-wrapper'>
+          <h3>Preço: <span>R$ {product?.price}</span></h3>
+          <h3>Estoque: <span>{product?.stock}</span></h3>
+        </div>
+        <h3>Descrição:</h3>
         <p>
-          Descrição: <br />
           {product?.description}
         </p>
+        <button className='btn btn-white'>Comprar</button>
       </div>
     </div>
   )
