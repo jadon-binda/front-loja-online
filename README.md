@@ -6,9 +6,10 @@ Para acessar a API do backend, use a seguinte URL: http://localhost:3001
 
 ### Funcionalidades
 
-    Listagem de produtos: exibe uma lista de produtos na página principal obtidos da API do Back-End.
-    Busca de produtos: permite encontrar produtos por meio de uma pesquisa dinâmica. A medida que digita o nome do produto, a aplicação vai filtrando os produtos correspondentes ao que está sendo digitado. 
-    Adição de produtos ao carrinho: permite adicionar produtos ao carrinho de compras.
+Listagem de produtos: exibe uma lista de produtos na página principal obtidos da API do Back-End.
+Busca de produtos: permite encontrar produtos por meio de uma pesquisa dinâmica. 
+A medida que digita o nome do produto, a aplicação vai filtrando os produtos correspondentes ao que está sendo digitado. 
+Adição de produtos ao carrinho: permite adicionar produtos ao carrinho de compras.
 
 ### Tecnologias utilizadas
 
